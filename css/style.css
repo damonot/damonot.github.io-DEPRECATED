@@ -1,0 +1,44 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: calc(100vh - 8em);
+  padding: 4em;
+  background-color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+}
+.blink-name {
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgb(25,25,25);
+    font-size: 80px;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Typing Animation */
+.anim-typewriter {
+  animation: typewriter 2s steps(11) 1s 1 normal both,
+      blinkTextCursor 500ms steps(11) 11 normal;
+  white-space: nowrap; 
+  border-right: 2px solid transparent;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 6em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgb(25,25,25);}
+  to{border-right-color: transparent;}
+}
