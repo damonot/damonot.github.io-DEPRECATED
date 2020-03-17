@@ -1,5 +1,6 @@
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* Google Fonts 
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans+Condensed:300&display=swap);
 
 /* Global */
 html {
@@ -83,16 +84,32 @@ body {
 .nav-bar ul {
   margin: auto;
   margin-top: 2px;
-  margin-right: 3%;
+  margin-right: 0.5%;
   padding: 0;
   text-align: center;
+  font-weight: 500;
 }
-
 .nav-bar li {
-  font-size: 3vw;
+  font-size: 2.5vw;
+  font-family: "Open Sans Condensed";
   color: rgb(63, 63, 63);
   display: inline-block;
-  margin: 0 10%; /* space between list elements */
+  margin: 0 4%; /* space between list elements */
   padding: 5px; /* space around text */
 }
-  
+.nav-bar li:hover {
+  background: linear-gradient(to right, rgb(25, 25, 63) 10%, rgb(133, 133, 133) 40%, rgb(104, 109, 122) 10%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 250ms linear 1;
+  /*display: inline-block;*/
+}
+@keyframes textclip {
+  to { background-position: 200% center; }
+}
