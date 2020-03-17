@@ -9,36 +9,88 @@ html {
 
 body {
   height: calc(100vh - 8em);
-  padding: 4em;
   background-color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
+  background: url("/img/brushed-alum.png");
 }
-.blink-name {
+
+/* Typing Animation */
+.type-name {
     position: relative;
     top: 50%;  
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgb(25,25,25);
-    font-size: 80px;
+    font-size: 8vw;
     text-align: center;
     word-wrap: break-word;
     white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+    overflow: hidden;    
 }
-
-/* Typing Animation */
 .anim-typewriter {
   animation: typewriter 2s steps(11) 1s 1 normal both,
-      blinkTextCursor 500ms steps(11) 11 normal;
-  white-space: nowrap; 
+      blinkTextCursor 500ms steps(11) 8 normal;
+      white-space: nowrap; 
+  animation-delay: 800ms;
   border-right: 2px solid transparent;
+
 }
-@keyframes typewriter{
+@keyframes typewriter {
   from{width: 0;}
   to{width: 6em;}
 }
-@keyframes blinkTextCursor{
+@keyframes blinkTextCursor {
   from{border-right-color: rgb(25,25,25);}
   to{border-right-color: transparent;}
 }
+
+
+.anim-breakline {
+  color: rgb(25,25,25);
+  display: block;
+  position: absolute;
+  margin-top: 0em;
+  left:50%;
+  width:0%;
+  text-align:center;
+  animation: breakline 800ms linear forwards;
+}
+@keyframes breakline {
+  from {
+    left:50%;
+    width:0%;
+  }
+  to {
+    left:35%;
+    width:30%;
+  }
+}
+
+.nav-bar {
+  transition: all .5s ease-in-out;
+  height: 0;
+  animation: expandDiv 1200ms;
+}
+@keyframes expandDiv {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.nav-bar ul {
+  margin: auto;
+  margin-top: 2px;
+  margin-right: 3%;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar li {
+  font-size: 3vw;
+  display: inline-block;
+  margin: 0 10%; /* space between list elements */
+  padding: 5px; /* space around text */
+}
+  
