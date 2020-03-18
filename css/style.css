@@ -132,15 +132,23 @@ body {
 }
 .horz-panes div {
   width: 40%;
-  float:left;
-  
   box-sizing:border-box;
   -moz-box-sizing:border-box; /* Firefox */
   -webkit-box-sizing:border-box; /* Safari */
 }
-.img {
-  text-align: right;
+.imgbox {
+  position: relative;
 }
-#bio-img img {
-  width: 50%;
+.imgbox img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  max-height: 20vw;
+  max-width: 25vw;
+  border-radius: .5em;
+  filter: grayscale(87%);
+}
+#img2 {
+  opacity: 0;
+  transition: opacity 1s;
 }
