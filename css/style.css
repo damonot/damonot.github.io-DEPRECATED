@@ -148,6 +148,10 @@ body {
   border-radius: .5em;
   filter: grayscale(87%);
 }
+#img1 {
+  opacity: 1;
+  transition: opacity 1s;
+}
 #img2 {
   opacity: 0;
   transition: opacity 1s;
