@@ -1,5 +1,4 @@
-/* Google Fonts 
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+/* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans+Condensed:300&display=swap);
 
 /* Global */
@@ -8,11 +7,23 @@ html {
   overflow: hidden;
 }
 
+::selection {
+  background: #ffeeb7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffeeb7; /* Gecko Browsers */
+}
+
 body {
-  height: calc(100vh - 8em);
+  height: calc(100vh - 1em);
   font-family: 'Anonymous Pro', monospace;  
   background: url("/img/brushed-alum.png");
   background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+}
+
+.header{
+  background-color: red;
 }
 
 /* Typing Animation */
@@ -50,12 +61,11 @@ body {
 .anim-breakline {
   color: rgb(63, 63, 63);
   display: block;
-  position: absolute;
   margin-top: 0em;
   left:50%;
   width:0%;
   text-align:center;
-  animation: breakline 800ms linear forwards;
+  animation: breakline 850ms linear forwards;
 }
 @keyframes breakline {
   from {
@@ -82,10 +92,7 @@ body {
   }
 }
 .nav-bar ul {
-  margin: auto;
-  margin-top: 2px;
   margin-right: 0.5%;
-  padding: 0;
   text-align: center;
   font-weight: 500;
 }
@@ -96,6 +103,10 @@ body {
   display: inline-block;
   margin: 0 4%; /* space between list elements */
   padding: 5px; /* space around text */
+}
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(63, 63, 63);
 }
 .nav-bar li:hover {
   background: linear-gradient(to right, rgb(25, 25, 63) 10%, rgb(133, 133, 133) 40%, rgb(104, 109, 122) 10%);
@@ -112,4 +123,24 @@ body {
 }
 @keyframes textclip {
   to { background-position: 200% center; }
+}
+
+.horz-panes {
+  padding: 8% 5% 0% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.horz-panes div {
+  width: 40%;
+  float:left;
+  
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+.img {
+  text-align: right;
+}
+#bio-img img {
+  width: 50%;
 }
