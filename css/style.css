@@ -8,17 +8,18 @@ html {
 }
 
 ::selection {
-  background: #ffeeb7; /* WebKit/Blink Browsers */
+  background: #fcde9c; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #ffeeb7; /* Gecko Browsers */
+  background: #fcde9c; /* Gecko Browsers */
 }
 
 body {
   height: calc(100vh - 1em);
   font-family: 'Anonymous Pro', monospace;  
-  background: url("/img/brushed-alum.png");
-  background-color: rgb(255, 255, 255);
+  background: none;
+  background: url("/img/billie-holiday.png");
+  background-color: #686963;
   overflow-y: auto;
 }
 
@@ -33,7 +34,7 @@ body {
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgb(63, 63, 63);
-    color:  rgb(25, 25, 63);
+    color:  #e0dfd5;
     font-size: 8vw;
     text-align: center;
     word-wrap: break-word;
@@ -59,7 +60,7 @@ body {
 
 
 .anim-breakline {
-  color: rgb(63, 63, 63);
+  color: rgb(95, 95, 95);
   display: block;
   margin-top: 0em;
   left:50%;
@@ -106,10 +107,10 @@ body {
 }
 .nav-bar a {
   text-decoration: none;
-  color: rgb(63, 63, 63);
+  color: #e0dfd5;
 }
 .nav-bar li:hover {
-  background: linear-gradient(to right, rgb(25, 25, 63) 10%, rgb(133, 133, 133) 40%, rgb(104, 109, 122) 10%);
+  background: linear-gradient(to right, #e0dfd5 35%, #4e3930 55%, #4e3930);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
