@@ -119,7 +119,7 @@ body {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 250ms linear 1;
+  animation: textclip 220ms linear 1;
   /*display: inline-block;*/
 }
 @keyframes textclip {
@@ -137,6 +137,7 @@ body {
   -moz-box-sizing:border-box; /* Firefox */
   -webkit-box-sizing:border-box; /* Safari */
 }
+
 .imgbox {
   position: relative;
 }
@@ -146,8 +147,8 @@ body {
   right: 0px;
   max-height: 20vw;
   max-width: 25vw;
-  border-radius: .5em;
-  filter: grayscale(87%);
+  border-radius: 7em .2em;
+  filter: grayscale(87%); 
 }
 #img1 {
   opacity: 1;
@@ -156,4 +157,10 @@ body {
 #img2 {
   opacity: 0;
   transition: opacity 1s;
+}
+
+
+.googledoc {
+  text-align: center;
+  margin-top: 10em;
 }
