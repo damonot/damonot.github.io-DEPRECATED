@@ -19,7 +19,7 @@ body {
   font-family: 'Anonymous Pro', monospace;  
   background: none;
   background: url("/img/billie-holiday.png");
-  background-color: #686963;
+  background-color: #868686;
   overflow-y: auto;
 }
 
@@ -27,14 +27,34 @@ body {
   background-color: red;
 }
 
+.here:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 3px dotted #ff0000;
+  transform: translate(-50%);
+}
+
+div {
+  color: white;
+  margin: 10px auto;
+  width: 60%;
+  height: 100px;
+  position: relative;
+  text-align: center
+}
+
+
 /* Typing Animation */
 .type-name {
     position: relative;
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgb(63, 63, 63);
-    color:  #e0dfd5;
+    color:  #f0efe9;
     font-size: 8vw;
     text-align: center;
     word-wrap: break-word;
@@ -54,13 +74,13 @@ body {
   to{width: 6em;}
 }
 @keyframes blinkTextCursor {
-  from{border-right-color: rgb(63, 63, 63);}
+  from{border-right-color: rgb(224, 224, 224);}
   to{border-right-color: transparent;}
 }
 
 
 .anim-breakline {
-  color: rgb(95, 95, 95);
+  color: rgb(255, 255, 255);
   display: block;
   margin-top: 0em;
   left:50%;
@@ -81,9 +101,15 @@ body {
 
 .nav-bar {
   transition: all .5s ease-in-out;
-  height: 0;
   animation: expandDiv 1200ms;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;/*add text align-center*/
 }
+
 @keyframes expandDiv {
   from {
     transform: scale(0);
@@ -92,25 +118,36 @@ body {
     transform: scale(1);
   }
 }
-.nav-bar ul {
-  margin-right: 0.5%;
-  text-align: center;
-  font-weight: 500;
-}
-.nav-bar li {
+
+.nav-bar ul li {
+  background-color: black;
   font-size: 2.5vw;
   font-family: "Open Sans Condensed";
   color: rgb(63, 63, 63);
   display: inline-block;
-  margin: 0 4%; /* space between list elements */
-  padding: 5px; /* space around text */
+  margin: 0 1%; /* space between list elements */
+  /*padding: 0px; /* space around text */
 }
-.nav-bar a {
+
+.nav-bar ul li a {
+  display: inline-block;
   text-decoration: none;
+  text-align: center;
   color: #e0dfd5;
+
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 0;
+  width: 100px;
+  background: #Cc3399;
+  color: #eee;
+  float: left;
+  text-align: center;
+
+
 }
 .nav-bar li:hover {
-  background: linear-gradient(to right, #e0dfd5 35%, #4e3930 55%, #4e3930);
+  background: linear-gradient(to left, #e0dfd5 40%, #ff0707 50%, #f0b12b);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -119,7 +156,7 @@ body {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 220ms linear 1;
+  animation: textclip 400ms linear 1;
   /*display: inline-block;*/
 }
 @keyframes textclip {
@@ -127,7 +164,7 @@ body {
 }
 
 .horz-panes {
-  padding: 8% 5% 0% 5%;
+  padding: 5% 5% 0% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -148,7 +185,7 @@ body {
   max-height: 20vw;
   max-width: 25vw;
   border-radius: 7em .2em;
-  filter: grayscale(87%); 
+  filter: grayscale(1%); 
 }
 #img1 {
   opacity: 1;
