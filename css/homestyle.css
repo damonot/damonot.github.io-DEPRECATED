@@ -1,0 +1,49 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans+Condensed:300&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  background: url("/img/billie-holiday.png");
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+nav ul li {
+  padding: 0rem 3rem;
+  font-size: 5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  height: 8%;
+  /*mix-blend-mode: difference;*/
+}
+
+.headshot {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  max-height: 90%;
+  max-width: 90%;
+}
