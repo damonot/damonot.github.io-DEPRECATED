@@ -6,21 +6,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+::selection {
+  background: #fcde9c; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fcde9c; /* Gecko Browsers */
+}
+
+
 body {
-  background-color: rgb(255, 255, 255);
   background: url("/img/billie-holiday.png");
   font-family: 'Anonymous Pro', monospace; 
 }
+.body-light {
+  transition: 1s;
+  background-color: rgb(255, 255, 255);
+}
+.body-dark {
+  transition: 2s;
+  background-color: rgb(42, 42, 42);
+}
+
 
 /* Typing Animation */
 .type-name {
     position: relative; 
-    margin: 1% 37% auto;
+    margin: 1% 37.33% auto;
     color: black;
     font-size: 8vw;
     text-align: center;
-    overflow: hidden;    
-    background-color: none;
+    overflow: hidden;
 }
 .anim-typewriter {
   animation: typewriter 1s steps(6) 1s 1 normal both,
@@ -58,7 +74,6 @@ body {
   }
 }
 
-
 nav {
   display: flex;
   margin: auto;
@@ -73,12 +88,32 @@ nav ul {
 nav ul li {
   padding: .2em 1em;
   font-size: 4vw;
-  font: 
 }
 nav ul li a {
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
   color: black;
 }
+.nav-bar li:hover {
+  /*background: linear-gradient(to left, #e0d5e0 40%, #ff0707 50%, #f0b12b);
+    background: linear-gradient(to left, #e0d5e0 40%, #ae90e0 50%, #a47c7c);
+
+  */
+  background: linear-gradient(to left, #e0d5e0 40%, #90d8e0 50%, #877ca4);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 550ms linear 1;
+  /*display: inline-block;*/
+}
+@keyframes textclip {
+  to { background-position: 200% center; }
+}
+
 
 .home {
   position: absolute;
@@ -111,9 +146,15 @@ nav ul li a {
 }
 
 .headshot {
+  z-index: -1;
   position: absolute;
   bottom: 0;
   left: 1%;
   max-height: 90%;
   max-width: 57%;
+  opacity: 75%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
 }
