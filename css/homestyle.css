@@ -9,13 +9,60 @@
 body {
   background-color: rgb(255, 255, 255);
   background: url("/img/billie-holiday.png");
+  font-family: 'Anonymous Pro', monospace; 
 }
 
+/* Typing Animation */
+.type-name {
+    position: relative; 
+    margin: 1% 37% auto;
+    color: black;
+    font-size: 8vw;
+    text-align: center;
+    overflow: hidden;    
+    background-color: none;
+}
+.anim-typewriter {
+  animation: typewriter 1s steps(6) 1s 1 normal both,
+      blinkTextCursor 500ms steps(11) 7 normal;
+  animation-delay: 800ms;
+  border-right: 3px solid transparent;
+  padding-left: .5%;
+}
+@keyframes typewriter {
+  from{width: 0%;}
+  to{width: 26%;}
+}
+@keyframes blinkTextCursor {
+  from{border-right-color: #000000;}
+  to{border-right-color: transparent;}
+}
+
+
+/* Breakline Animation */
+.anim-breakline {
+  position: relative;
+  margin-top: -1vh;
+  color: black;
+  text-align:center;
+  animation: breakline 800ms linear forwards;
+}
+@keyframes breakline {
+  from {
+    left:50%;
+    width:0%;
+  }
+  to {
+    left:35%;
+    width:30%;
+  }
+}
+
+
 nav {
-  min-height: 10vh;
   display: flex;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 nav ul {
@@ -24,8 +71,9 @@ nav ul {
   margin: auto;
 }
 nav ul li {
-  padding: 0rem 3rem;
-  font-size: 5rem;
+  padding: .2em 1em;
+  font-size: 4vw;
+  font: 
 }
 nav ul li a {
   text-decoration: none;
@@ -36,8 +84,38 @@ nav ul li a {
   position: absolute;
   top: .5em;
   left: .5em;
-  height: 8%;
-  /*mix-blend-mode: difference;*/
+  height: 2em;
+  mix-blend-mode: difference;
+}
+
+#container {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.nightmode {
+  position: absolute;
+  top: .6em;
+  left: .6em;
+  height: 3.5vw;
+  mix-blend-mode: difference;
+  background-color: red;
+}
+
+.bulb-off {
+  width: 500px;
+  height: 700px;
+  background: url("/img/crescent.png") no-repeat;
+  margin: auto;
+}
+
+.bulb-on {
+  width: 500px;
+  height: 700px;
+  background: url("/img/sun.png") no-repeat;
+  margin: auto;
 }
 
 .headshot {
@@ -45,5 +123,5 @@ nav ul li a {
   bottom: 0;
   left: 1%;
   max-height: 90%;
-  max-width: 90%;
+  max-width: 57%;
 }
