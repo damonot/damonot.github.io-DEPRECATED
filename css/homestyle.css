@@ -8,10 +8,10 @@
 }
 
 ::selection {
-  background: #fcde9c; /* WebKit/Blink Browsers */
+  background: #f7e3b5; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #fcde9c; /* Gecko Browsers */
+  background: #f7e3b5; /* Gecko Browsers (firefox) */
 }
 
 
@@ -20,14 +20,13 @@ body {
   font-family: 'Anonymous Pro', monospace; 
 }
 .body-light {
-  transition: 1s;
+  transition: 2s;
   background-color: rgb(255, 255, 255);
 }
 .body-dark {
-  transition: 2s;
+  transition: 1.5s;
   background-color: rgb(42, 42, 42);
 }
-
 
 /* Typing Animation */
 .type-name {
