@@ -88,34 +88,26 @@ nav ul li a {
   mix-blend-mode: difference;
 }
 
-#container {
-  width: 1000px;
-  height: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
 .nightmode {
+  mix-blend-mode: difference;
+}
+.nightmode-off {
   position: absolute;
+  width: 4%;
+  height: 4vw;
   top: .6em;
   left: .6em;
-  height: 3.5vw;
-  mix-blend-mode: difference;
-  background-color: red;
-}
-
-.bulb-off {
-  width: 500px;
-  height: 700px;
-  background: url("/img/crescent.png") no-repeat;
-  margin: auto;
-}
-
-.bulb-on {
-  width: 500px;
-  height: 700px;
   background: url("/img/sun.png") no-repeat;
-  margin: auto;
+  background-size: 100% 100%;
+}
+.nightmode-on {
+  position: absolute;
+  width: 4%;
+  height: 4vw;
+  top: .6em;
+  left: .6em;
+  background: url("/img/crescent.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .headshot {
