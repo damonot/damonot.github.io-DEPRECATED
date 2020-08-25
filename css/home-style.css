@@ -30,23 +30,24 @@ body {
 
 /* Typing Animation */
 .type-name {
-    position: relative; 
-    margin: 1% 37.33% auto;
-    color: black;
-    font-size: 8vw;
-    text-align: center;
-    overflow: hidden;
+  position: relative; 
+  margin: auto;
+  color: black;
+  font-size: 8vmax;
+  text-align: center;
+  overflow: hidden;
 }
 .anim-typewriter {
   animation: typewriter 1s steps(6) 1s 1 normal both,
       blinkTextCursor 500ms steps(11) 7 normal;
   animation-delay: 800ms;
   border-right: 3px solid transparent;
-  padding-left: .5%;
+  padding-left: 1.5vmax;
 }
 @keyframes typewriter {
   from{width: 0%;}
-  to{width: 26%;}
+  to{width: 27vmax;}
+
 }
 @keyframes blinkTextCursor {
   from{border-right-color: #000000;}
@@ -64,16 +65,16 @@ body {
 }
 @keyframes breakline {
   from {
-    left:50%;
+    margin:auto;
     width:0%;
   }
   to {
-    left:35%;
-    width:30%;
+    margin: auto;
+    width:27vmax;
   }
 }
 
-nav {
+.nav-bar {
   display: flex;
   margin: auto;
   justify-content: space-around;
@@ -84,11 +85,11 @@ nav ul {
   list-style: none;
   margin: auto;
 }
-nav ul li {
+.nav-bar ul li {
   padding: .2em 1em;
-  font-size: 4vw;
+  font-size: 3.5vmax;
 }
-nav ul li a {
+.nav-bar ul li a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -112,6 +113,16 @@ nav ul li a {
 @keyframes textclip {
   to { background-position: 200% center; }
 }
+
+#bio {
+  margin-top: 2%;
+  margin-left: 35%;
+  text-align: right;
+  font-size: 1em;
+  width: 400px;
+  background-color: none; #f7e3b5;
+}
+
 
 
 .home {
@@ -146,12 +157,12 @@ nav ul li a {
 
 .headshot {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 1%;
   max-height: 90%;
   max-width: 57%;
-  opacity: 75%;
+  opacity: 71%;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
