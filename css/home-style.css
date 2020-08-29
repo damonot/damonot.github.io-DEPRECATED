@@ -121,6 +121,13 @@ nav ul {
   background-color: none;
 }
 
+#triangle-border {
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  opacity: 71%;
+}
+
 
 
 .home {

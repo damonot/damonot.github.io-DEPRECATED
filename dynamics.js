@@ -1,5 +1,6 @@
 //-- Dynamic Width, Margin, & Centering --//
 var windowWidth = window.innerWidth;
+
 var bio = document.getElementById("bio");
 var bioWidth = (350 / windowWidth) * 100;
 bio.style.width = bioWidth+"%";
@@ -7,6 +8,10 @@ bio.style.width = bioWidth+"%";
 //var bioLeftMargin =  3 * windowWidth / 100;
 var bioLeftMargin =  (windowWidth / 37.5);
 bio.style.marginLeft = bioLeftMargin+"%";
+
+var triborder = document.getElementById("triangle-border");
+var triborderWidth = (225 / windowWidth) * 100;
+triborder.style.width = triborderWidth+"%";
 
 //update bio centering
 if((bioWidth >= 27)) {
@@ -37,4 +42,9 @@ $(window).resize(function() {
   } else {
     bio.style.textAlign = "right";
   }
+
+  //update triangle border
+  triborderWidth = (225 / windowWidth) * 100
+  triborder.style.width = triborderWidth+"%";
+
 });
