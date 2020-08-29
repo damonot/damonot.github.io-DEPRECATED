@@ -9,7 +9,7 @@ bio.style.width = bioWidth+"%";
 var bioLeftMargin =  (windowWidth / 37.5);
 bio.style.marginLeft = bioLeftMargin+"%";
 
-var triborder = document.getElementById("triangle-border");
+var triborder = document.getElementById("triangle-div");
 var triborderWidth = (225 / windowWidth) * 100;
 triborder.style.width = triborderWidth+"%";
 

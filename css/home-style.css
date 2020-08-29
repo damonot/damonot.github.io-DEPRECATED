@@ -121,13 +121,33 @@ nav ul {
   background-color: none;
 }
 
-#triangle-border {
+
+#triangle-div {
+  position: relative;
   display: block;
   margin: auto;
-  margin-top: 4%;
-  opacity: 71%;
+  margin-top: 3%;
+  background-color:;#000000;
 }
 
+#triangle-border {
+  position: relative;
+  max-width:100%;
+  max-height:100%;
+}
+
+#triangle-img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 55%;
+  top: 0;
+  bottom: 18%;
+  left: 0;
+  right: 0;
+}
 
 
 .home {
@@ -166,7 +186,7 @@ nav ul {
   bottom: 0;
   left: 1%;
   max-height: 90%;
-  max-width: 57%;
+  max-width: 54%;
   opacity: 71%;
   -moz-user-select: none;
   -webkit-user-select: none;
