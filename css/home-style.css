@@ -147,7 +147,13 @@ nav ul {
   bottom: 18%;
   left: 0;
   right: 0;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
+
+
 
 
 .home {
