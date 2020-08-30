@@ -1,46 +1,66 @@
 //-- Dynamic Width, Margin, & Centering --//
 var windowWidth = window.innerWidth;
 
-var textbox = document.getElementById("bio");
-var textboxWidth = (350 / windowWidth) * 100;
-textbox.style.width = textboxWidth+"%";
+var bio = document.getElementById("bio");
+var popout = document.getElementById("popout");
+var bioWidth = (350 / windowWidth) * 100;
 
-//var textboxLeftMargin =  3 * windowWidth / 100;
-var textboxLeftMargin =  (windowWidth / 37.5);
-textbox.style.marginLeft = textboxLeftMargin+"%";
+var popoutWidth = bioWidth;
+bio.style.width = bioWidth+"%";
+popout.style.width = popoutWidth+"%";
 
+//var bioRightMargin =  3 * windowWidth / 100;
+var bioRightMargin = (windowWidth / 42.5);
+bio.style.marginRight = bioRightMargin+"%";
+popout.style.marginRight = bioRightMargin+"%";
+
+// triangle border
 var triborder = document.getElementById("triangle-div");
 var triborderWidth = (225 / windowWidth) * 100;
 triborder.style.width = triborderWidth+"%";
 
-//update textbox centering
-if((textboxWidth >= 27)) {
-  textbox.style.textAlign = "center";
-  textbox.style.marginLeft = "auto";
-  textbox.style.marginRight = "auto";
+//update bio/popout centering
+if((bioWidth >= 27)) {
+  bio.style.textAlign = "center";
+  bio.style.marginLeft = "auto";
+  bio.style.marginRight = "auto";
+
+  popout.style.textAlign = bio.style.textAlign;
+  popout.style.marginLeft = bio.style.marginLeft;
+  popout.style.marginRight = bio.style.marginRight;
+
 } else {
-  textbox.style.textAlign = "right";
+  bio.style.textAlign = "right";
+  popout.style.textAlign = "right";
 }
 
 $(window).resize(function() {
   // update window
   windowWidth = window.innerWidth; 
 
-  // update textbox width
-  textboxWidth = (350 / windowWidth) * 100;
-  textbox.style.width = textboxWidth+"%";
+  // update bio/popout width
+  bioWidth = (350 / windowWidth) * 100;
+  bio.style.width = bioWidth+"%";
+  popout.style.width = bioWidth+"%";
 
-  //update textbox margin
-  var textboxLeftMargin =  (windowWidth / 37.5);
-  textbox.style.marginLeft = textboxLeftMargin+"%";
+  //update bio margin
+  var bioRightMargin =  (windowWidth / 42.5);
+  bio.style.marginRight = bioRightMargin+"%";
+  popout.style.marginRight = bioRightMargin+"%";
 
-  //update textbox centering
-  if((textboxWidth >= 27)) {
-    textbox.style.textAlign = "center";
-    textbox.style.marginLeft = "auto";
-    textbox.style.marginRight = "auto";
+  //update bio centering
+  if((bioWidth >= 27)) {
+    bio.style.textAlign = "center";
+    bio.style.marginRight = "auto";
+    bio.style.marginRight = "auto";
+
+    popout.style.textAlign = bio.style.textAlign;
+    popout.style.marginLeft = bio.style.marginLeft;
+    popout.style.marginRight = bio.style.marginRight;
+
   } else {
-    textbox.style.textAlign = "right";
+    bio.style.textAlign = "right";
+    popout.style.textAlign = "right";
   }
 
   //update triangle border
