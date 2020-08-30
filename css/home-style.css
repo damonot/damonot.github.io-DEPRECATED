@@ -121,6 +121,23 @@ nav ul {
   background-color: none;
 }
 
+#popout {
+  margin-top: 1%;
+  text-align: right;
+  font-size: 1em;
+  background-color: none;
+}
+
+.auto {
+  display: block;
+  margin: 20px;
+  width: 400px;
+  height: 20px;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+
 
 #triangle-div {
   position: relative;

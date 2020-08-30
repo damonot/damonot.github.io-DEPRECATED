@@ -1,46 +1,46 @@
 //-- Dynamic Width, Margin, & Centering --//
 var windowWidth = window.innerWidth;
 
-var bio = document.getElementById("bio");
-var bioWidth = (350 / windowWidth) * 100;
-bio.style.width = bioWidth+"%";
+var textbox = document.getElementById("bio");
+var textboxWidth = (350 / windowWidth) * 100;
+textbox.style.width = textboxWidth+"%";
 
-//var bioLeftMargin =  3 * windowWidth / 100;
-var bioLeftMargin =  (windowWidth / 37.5);
-bio.style.marginLeft = bioLeftMargin+"%";
+//var textboxLeftMargin =  3 * windowWidth / 100;
+var textboxLeftMargin =  (windowWidth / 37.5);
+textbox.style.marginLeft = textboxLeftMargin+"%";
 
 var triborder = document.getElementById("triangle-div");
 var triborderWidth = (225 / windowWidth) * 100;
 triborder.style.width = triborderWidth+"%";
 
-//update bio centering
-if((bioWidth >= 27)) {
-  bio.style.textAlign = "center";
-  bio.style.marginLeft = "auto";
-  bio.style.marginRight = "auto";
+//update textbox centering
+if((textboxWidth >= 27)) {
+  textbox.style.textAlign = "center";
+  textbox.style.marginLeft = "auto";
+  textbox.style.marginRight = "auto";
 } else {
-  bio.style.textAlign = "right";
+  textbox.style.textAlign = "right";
 }
 
 $(window).resize(function() {
   // update window
   windowWidth = window.innerWidth; 
 
-  // update bio width
-  bioWidth = (350 / windowWidth) * 100;
-  bio.style.width = bioWidth+"%";
+  // update textbox width
+  textboxWidth = (350 / windowWidth) * 100;
+  textbox.style.width = textboxWidth+"%";
 
-  //update bio margin
-  var bioLeftMargin =  (windowWidth / 37.5);
-  bio.style.marginLeft = bioLeftMargin+"%";
+  //update textbox margin
+  var textboxLeftMargin =  (windowWidth / 37.5);
+  textbox.style.marginLeft = textboxLeftMargin+"%";
 
-  //update bio centering
-  if((bioWidth >= 27)) {
-    bio.style.textAlign = "center";
-    bio.style.marginLeft = "auto";
-    bio.style.marginRight = "auto";
+  //update textbox centering
+  if((textboxWidth >= 27)) {
+    textbox.style.textAlign = "center";
+    textbox.style.marginLeft = "auto";
+    textbox.style.marginRight = "auto";
   } else {
-    bio.style.textAlign = "right";
+    textbox.style.textAlign = "right";
   }
 
   //update triangle border

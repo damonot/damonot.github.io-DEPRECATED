@@ -3,7 +3,8 @@ var tri_click = document.getElementById("triangle-div");
 var tri_img = document.getElementById("triangle-img");
 var imgs = [
   "./img/network.png",
-  "./img/guitar.png"];
+  "./img/guitar.png",
+  "./img/photo.png"];
 
 var hrefs = [];
 var nextIndex = 0;
