@@ -1,7 +1,7 @@
 //-- Dynamic Width, Margin, & Centering --//
 var windowWidth = window.innerWidth;
 
-var bio = document.getElementById("bio");
+// var bio = document.getElementById("bio");
 var popout = document.getElementById("popout");
 var bioWidth = (350 / windowWidth) * 100;
 
@@ -9,7 +9,7 @@ var popoutWidth = bioWidth;
 bio.style.width = bioWidth+"%";
 popout.style.width = popoutWidth+"%";
 
-//var bioRightMargin =  3 * windowWidth / 100;
+var bioRightMargin =  3 * windowWidth / 100;
 var bioRightMargin = (windowWidth / 42.5);
 bio.style.marginRight = bioRightMargin+"%";
 popout.style.marginRight = bioRightMargin+"%";

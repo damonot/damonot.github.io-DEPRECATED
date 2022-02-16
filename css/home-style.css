@@ -86,7 +86,7 @@ nav ul {
   margin: auto;
 }
 .nav-bar ul li {
-  padding: .2em 1em;
+  padding: .2em .5em;
   font-size: 3.5vmax;
 }
 .nav-bar ul li a {
@@ -116,25 +116,43 @@ nav ul {
 
 #bio {
   margin-top: 1%;
-  text-align: right;
+  text-align: center;
   font-size: 1em;
-  background-color: none;
+  height: 0px;
 }
 
 #popout {
-  margin-top: 1%;
-  text-align: right;
+  margin: none;
   font-size: 1em;
-  background-color: none;
+  /* outline: 1px solid black; */
+  height: 0px;
 }
 
 .auto {
   display: block;
   margin: auto;
   width: 40%;
-  height: 200px;
+  height: auto;
   overflow: hidden;
   transition: all .5s ease;
+}
+
+.content {
+  display: block;
+  margin: auto;
+  width: 40%;
+  margin-top: 1%;
+  text-align: center;
+  font-size: 1em;
+  background-color: none;
+
+  /* outline: 1px solid yellowgreen; */
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
 }
 
 
@@ -144,7 +162,7 @@ nav ul {
   display: block;
   margin: auto;
   margin-top: 3%;
-  background-color:;#000000;
+  /* outline: 1px solid red; */
 }
 
 #triangle-border {
@@ -168,6 +186,7 @@ nav ul {
   -moz-transition: opacity 3s ease-in-out;
   -o-transition: opacity 3s ease-in-out;
   transition: opacity 3s ease-in-out;
+  /* outline: 1px solid green; */
 }
 
 
@@ -188,8 +207,8 @@ nav ul {
   position: absolute;
   width: 4%;
   height: 4vw;
-  top: .6em;
-  left: .6em;
+  top: 1%;
+  left: 1%;
   background: url("/img/sun.png") no-repeat;
   background-size: 100% 100%;
 }
@@ -197,8 +216,8 @@ nav ul {
   position: absolute;
   width: 4%;
   height: 4vw;
-  top: .6em;
-  left: .6em;
+  top: 1%;
+  left: 1%;
   background: url("/img/crescent.png") no-repeat;
   background-size: 100% 100%;
 }
