@@ -16,7 +16,7 @@
 
 
 body {
-  background: url("/img/billie-holiday.png");
+  background: url("/static/billie-holiday.png");
   font-family: 'Anonymous Pro', monospace; 
 }
 .body-light {
@@ -143,19 +143,23 @@ nav ul {
   width: 40%;
   margin-top: 1%;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: none;
-
-  /* outline: 1px solid yellowgreen; */
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .content {
-    width: 90%;
+    width: 40%;
   }
 }
 
 
+@media only screen and (max-width: 810px) {
+  .content {
+    width: 90%;
+  }
+}
 
 #triangle-div {
   position: relative;
@@ -209,7 +213,7 @@ nav ul {
   height: 4vw;
   top: 1%;
   left: 1%;
-  background: url("/img/sun.png") no-repeat;
+  background: url("/static/sun.png") no-repeat;
   background-size: 100% 100%;
 }
 .nightmode-on {
@@ -218,7 +222,7 @@ nav ul {
   height: 4vw;
   top: 1%;
   left: 1%;
-  background: url("/img/crescent.png") no-repeat;
+  background: url("/static/crescent.png") no-repeat;
   background-size: 100% 100%;
 }
 

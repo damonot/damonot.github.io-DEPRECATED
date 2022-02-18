@@ -2,9 +2,9 @@
 var tri_click = document.getElementById("triangle-div");
 var tri_img = document.getElementById("triangle-img");
 var imgs = [
-  "./img/network.png",
-  "./img/guitar.png",
-  "./img/photo.png"];
+  "./img/photo.png",
+  "./img/photo1.png",
+  "./img/photo2.png"];
 
 var hrefs = [];
 var nextIndex = 0;
