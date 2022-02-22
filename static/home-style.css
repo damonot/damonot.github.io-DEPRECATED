@@ -87,13 +87,18 @@ nav ul {
 }
 .nav-bar ul li {
   padding: .2em .5em;
-  font-size: 3.5vmax;
+  font-size: 3.5rem;
 }
 .nav-bar ul li a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
   color: black;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: dashed;
 }
 .nav-bar li:hover {
   /*background: linear-gradient(to left, #e0d5e0 40%, #ff0707 50%, #f0b12b);
@@ -152,12 +157,20 @@ nav ul {
   .content {
     width: 40%;
   }
+  .nav-bar ul li {
+    padding: .2em .5em;
+    font-size: 3.5rem;
+  }
 }
 
 
 @media only screen and (max-width: 810px) {
   .content {
     width: 90%;
+  }
+  .nav-bar ul li {
+    padding: .2em .5em;
+    font-size: 2rem;
   }
 }
 
